@@ -1,12 +1,16 @@
 require_relative"../lib/post.rb"
 
 RSpec.describe Post do
-	let (:post) {Post.new(BLAHBLAH)}
 
-	it("#title returns title") do
-		expect(@post1.title).to eq()
-		expect(@post1.title).to eq()
+	before :each do
+		@test1 = Post.new("BLAHBLAH","2","three")
+  	end
+
+	describe "@title"do
+		it "shows title" do
+			expect(@test1.title).to eq("BLAHBLAH")
 	end
+end
 
 	# it("#date returns date") do
 	# end

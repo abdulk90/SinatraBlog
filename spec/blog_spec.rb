@@ -1,10 +1,13 @@
 require_relative"../lib/blog.rb"
 
 RSpec.describe Blog do
-	let (:blog) {Blog.new(@posts)}
+	before :each do
+		@test = Blog.new
+  	end
 
-	it("#posts return lists of posts") do
-		expect(@blog.posts).to eq()
+	describe "@posts"do
+		it "shows empty array" do
+			expect(@test.posts).to eq([])
+		end
 	end
 end
-test
