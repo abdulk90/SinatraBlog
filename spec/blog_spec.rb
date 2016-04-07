@@ -7,3 +7,4 @@ RSpec.describe Blog do
 		expect(@blog.posts).to eq()
 	end
 end
+test
