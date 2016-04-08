@@ -5,9 +5,10 @@ RSpec.describe Blog do
 		@test = Blog.new
   	end
 
-	describe "@posts"do
+	describe "@posts" do
 		it "shows empty array" do
 			expect(@test.posts).to eq([])
 		end
 	end
+
 end

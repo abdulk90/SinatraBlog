@@ -1,0 +1,21 @@
+<h1>Home</h1>
+
+<ul>
+<h2>
+<% @posts.each do |i| %>
+	
+	<li>
+		<h2><%= i.title %></h2>
+		<h4><%= i.date %></h4><br><br><br>
+			<a href="/post_details/<%= i.title %>">Details! </a>
+
+		<% end %> 
+	</li>
+
+
+	</h2>
+</ul>
+<br>
+<br>
+<br>
+Click <a href="/new_task"> HUZZAH</a> to add a new task :3!
